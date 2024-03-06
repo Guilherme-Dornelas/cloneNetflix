@@ -1,0 +1,7 @@
+{
+  "name": "clone-netflix",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
