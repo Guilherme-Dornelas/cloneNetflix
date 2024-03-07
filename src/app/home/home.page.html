@@ -1,20 +1,77 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-app>
+
+<ion-header class="header" [translucent]="true">
+  <ion-toolbar class="nav">
+    <div slot="start"><i class="bi bi-list"></i></div><!--icone do menu hamburgue-->
+    
+    <button [routerLink]="['/home']" class="logo">
+      <img src="assets/netflix-logo.png" alt="logo"  />
+    </button>
+    
+   
+    <div slot="end"><i class="bi bi-tv"></i></div><!--icone da tv-->
   </ion-toolbar>
+
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div>
+     <!-- fazer um carrousel de botoes -->
   </div>
+
+  <div id="container" class="container">
+     <!-- aqui vai os cards dos filmes -->
+     <div>
+        <h3>Minha lista</h3>
+     </div>
+
+     <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="card_filme">
+            <ion-img src="assets/image 1.png" alt="filme"></ion-img>
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div class="card_filme">
+            <ion-img src="assets/image 2.png" alt="filme"></ion-img>
+          </div>
+          
+        </ion-col>
+      </ion-row>
+
+        <div>
+          <h3>Assitir novamente</h3>
+       </div>
+
+      <ion-row>
+        
+        <ion-col>
+          <div class="card_filme">
+            <ion-img src="assets/image 1.png" alt="filme"></ion-img>
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div class="card_filme">
+            <ion-img src="assets/image 2.png" alt="filme"></ion-img>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
 </ion-content>
+
+
+<ion-footer [translucent]="true" class="footer">
+  <ion-toolbar  class="nav_footer">
+    <i slot="start" class="bi bi-house-door-fill"></i><!--home-->
+    <i  class="bi bi-person-fill user_icon"></i><!--user-->
+    <i slot="end" class="bi bi-box-arrow-in-right"></i><!--exit-->
+  </ion-toolbar>
+</ion-footer>
+
+</ion-app>
